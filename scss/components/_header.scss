@@ -1,0 +1,33 @@
+.main-header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  .navbar {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+  }
+
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #000;
+    i {
+      font-size: 1.25rem;
+    }
+  }
+
+  .nav-link {
+    color: #333;
+    font-weight: 500;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    &:hover,
+    &:focus {
+      color: #000;
+    }
+  }
+
+  .navbar-toggler {
+    border: none;
+  }
+}
