@@ -18,52 +18,47 @@
 	<header class="main-header">
 		<nav class="navbar navbar-expand-lg pt-3 pb-4">
 			<div class="container">
-				<div class="row w-100 align-items-end">
-					<div class="col-3">
-						<a class="logo" href="#">
-							<img src="img/logo.png" alt="HotForeX Logo" />
-						</a>
-					</div>
-					<div class="col">
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-							data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse d-flex justify-content-end" id="mainNavbar">
-							<ul class="navbar-nav mb-2 mb-lg-0">
-								<li class="nav-item">
-									<a class="nav-link" href="#">
-										<i class="fas fa-home me-2"></i>
-										<span class="d-lg-none">Home</span>
-									</a>
-								</li>
-								<li class="nav-item"><a class="nav-link" href="#">About</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Products</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Accounts</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Platforms</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
-								<li class="nav-item"><a class="nav-link" href="#">Education</a></li>
-							</ul>
-						</div>
-					</div>
+				<a class="navbar-brand" href="#">
+					<img src="img/logo.png" alt="HotForeX Logo" />
+				</a>
+
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar"
+					aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa-solid fa-bars text-white"></i>
+				</button>
+
+				<div class="collapse navbar-collapse justify-content-end" id="mainNavbar">
+					<ul class="navbar-nav mb-2 mb-lg-0">
+						<li class="nav-item">
+							<a class="nav-link" href="#">
+								<i class="fas fa-home me-2 d-none d-lg-inline"></i>
+								<span class="d-lg-none">Home</span>
+							</a>
+						</li>
+						<li class="nav-item"><a class="nav-link" href="#">About</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Products</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Accounts</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Platforms</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Tools</a></li>
+						<li class="nav-item"><a class="nav-link" href="#">Education</a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>
 	</header>
 
-	<section id="hero" class="hero pt-5">
+	<section id="hero" class="hero pt-4 pt-lg-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-4">
-					<h1 class="pt-4">HotForex App</h1>
+				<div class="col-12 col-lg-6 col-xl-4">
+					<h1 class="pt-xl-4">HotForex App</h1>
 					<h2 class="pb-3">Your Indispensable Tool</h2>
-					<ul class="pb-5">
+					<ul class="pb-3 pb-xl-5">
 						<li>- Lorem Ipsum is simply dummy text of the printing and</li>
 						<li>- Lorem Ipsum is simply dummy text of the</li>
 						<li>- Lorem Ipsum is simply dummy text of the printing</li>
 					</ul>
-					<div class="d-flex app-links">
+					<div class="d-flex app-links mb-3">
 						<a href="#" target="_blank" class="d-inline-block me-2">
 							<img src="img/googleplay.png" alt="" />
 						</a>
@@ -72,7 +67,7 @@
 						</a>
 					</div>
 				</div>
-				<div class="col-8 d-flex align-items-end justify-content-end">
+				<div class="col-12 col-lg-6 col-xl-8 d-flex align-items-end justify-content-end">
 					<img src="https://fakeimg.pl/700x330" />
 				</div>
 			</div>
@@ -82,57 +77,54 @@
 	<section id="form" class="form py-5">
 		<div class="container">
 			<form>
-				<div class="row mb-3">
-					<div class="col-3">
-						<label for="firstname" class="d-none">First Name</label>
-						<input type="text" id="firstname" placeholder="First Name" class="w-100 py-2 px-3" />
-					</div>
-					<div class="col-3">
-						<label for="lastname" class="d-none">Last Name</label>
-						<input type="text" id="lastname" placeholder="Last Name" class="w-100 py-2 px-3" />
-					</div>
-					<div class="col-3">
-						<label for="email" class="d-none">Email address</label>
-						<input type="email" id="email" placeholder="Email" class="w-100 py-2 px-3" />
-						<div class="form-text text-danger d-none" id="email-error">Please enter a valid email address.
-						</div>
-					</div>
-					<div class="col-3 d-flex align-items-start">
-						<input type="checkbox" class="mt-1 me-2" />
-						<small>VI have read and accepted the privacy policy<br />
-							Trading Forex & CFDs is risky</small>
-					</div>
-				</div>
 				<div class="row">
-					<div class="col-3">
+					<div class="col-12 col-lg-4 col-xl-3">
+						<label for="firstname" class="d-none">First Name</label>
+						<input type="text" id="firstname" placeholder="First Name" class="w-100 py-2 px-3 mb-3" />
 						<label for="country" class="d-none">Country of Residence</label>
-						<select class="form-select w-100 py-2 px-3" id="country" name="country">
+						<select class="form-select w-100 py-2 px-3 mb-3 mb-lg-0" id="country" name="country">
 							<option value="" selected disabled>Select a country</option>
 							<option value="BR">Brazil</option>
 							<option value="US">United States</option>
 							<option value="FR">France</option>
 						</select>
 					</div>
-					<div class="col-1 pe-1">
-						<label for="prefix" class="d-none">Phone Prefix</label>
-						<input type="text" id="prefix" name="prefix" class="w-100 py-2 px-3" />
-						<div class="form-text text-danger d-none" id="prefix-error">Prefix must start with "+" and
-							contain only numbers after.</div>
+					<div class="col-12 col-lg-4 col-xl-3">
+						<label for="lastname" class="d-none">Last Name</label>
+						<input type="text" id="lastname" placeholder="Last Name" class="w-100 py-2 px-3 mb-3" />
+						<div class="row">
+							<div class="col-3 pe-0">
+								<label for="prefix" class="d-none">Phone Prefix</label>
+								<input type="text" id="prefix" name="prefix" class="py-2 px-3 w-100" />
+							</div>
+							<div class="col-9">
+								<label for="phone" class="d-none">Phone</label>
+								<input type="number" id="phone" placeholder="Phone Number" class="py-2 px-3 w-100" />
+							</div>
+							<div class="col-12">
+								<small class="form-text text-danger d-none" id="prefix-error">Prefix must start with "+" and contain only numbers after.</small>
+							</div>
+						</div>
 					</div>
-					<div class="col-2 ps-1">
-						<label for="phone" class="d-none">Phone</label>
-						<input type="number" id="phone" placeholder="Phone Number" class="w-100 py-2 px-3" />
-					</div>
-					<div class="col-3">
+					<div class="col-12 col-lg-4 col-xl-3 mt-3 mt-xl-0">
+						<label for="email" class="d-none">Email address</label>
+						<input type="email" id="email" placeholder="Email" class="w-100 py-2 px-3" />
+						<small class="form-text text-danger d-none" id="email-error">Please enter a valid email address.
+						</small>
 						<label for="currency" class="d-none">Currency</label>
-						<select class="form-select w-100 py-2 px-3" id="currency" name="currency">
+						<select class="form-select w-100 py-2 px-3 mt-3" id="currency" name="currency">
 							<option>USD</option>
 							<option>BLR</option>
 							<option>EUR</option>
 						</select>
 					</div>
-					<div class="col-3">
-						<button class="btn btn-danger w-100 h-100">Register Now</button>
+					<div class="col-12 col-xl-3">
+						<div class="d-flex align-items-start mt-3 mt-xl-0">
+							<input type="checkbox" class="mt-1 me-2" />
+							<small>I have read and accepted the privacy policy<br />
+								Trading Forex & CFDs is risky</small>
+						</div>
+						<button class="btn btn-danger w-100 py-2 mt-3">Register Now</button>
 					</div>
 				</div>
 			</form>
@@ -142,31 +134,31 @@
 	<section class="image-block grey py-5">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col pt-5">
-					<h3 class="text-center mb-5">This is dummy text</h3>
+				<div class="col pt-lg-5">
+					<h3 class="text-center mb-4 mb-lg-5">This is dummy text</h3>
 				</div>
 			</div>
-			<div class="row justify-content-center align-items-center mb-5">
-				<div class="col-2">
-					<div class="mb-5  text-end">
-						<img src="https://fakeimg.pl/100x100" class="d-block mb-1 ms-auto" />
+			<div class="row justify-content-center align-items-center pb-lg-5">
+				<div class="col-12 col-lg-3 col-xl-2">
+					<div class="mb-5 text-center text-lg-end">
+						<img src="https://fakeimg.pl/100x100" class="d-block mb-1 mx-auto me-lg-0" />
 						<span class="text-end">It's a long established fact that a reader</span>
 					</div>
-					<div class="justify-content-end d-block text-end">
-						<img src="https://fakeimg.pl/100x100" class="d-block mb-1 ms-auto" />
+					<div class="text-center text-lg-end">
+						<img src="https://fakeimg.pl/100x100" class="d-block mb-1 mx-auto me-lg-0" />
 						<span>It's a long established fact that a reader</span>
 					</div>
 				</div>
-				<div class="col-4">
-					<img src="https://fakeimg.pl/415x620" />
+				<div class="col-lg-6 col-xl-4 mt-5 mt-lg-0">
+					<img src="https://fakeimg.pl/415x620" class="m-auto" />
 				</div>
-				<div class="col-2">
-					<div class="justify-content-start mb-5">
-						<img src="https://fakeimg.pl/100x100" class="d-block mb-1" />
+				<div class="col-12 col-lg-3 col-xl-2">
+					<div class="text-center text-lg-start mt-5 mt-lg-0 mb-5">
+						<img src="https://fakeimg.pl/100x100" class="d-block mb-1 mx-auto ms-lg-0" />
 						<span>It's a long established fact that a reader</span>
 					</div>
-					<div class="justify-content-start">
-						<img src="https://fakeimg.pl/100x100" class="d-block mb-1" />
+					<div class="text-center text-lg-start">
+						<img src="https://fakeimg.pl/100x100" class="d-block mb-1 mx-auto ms-lg-0" />
 						<span>It's a long established fact that a reader</span>
 					</div>
 
@@ -177,11 +169,11 @@
 
 	<section class="image-block blue pt-5">
 		<div class="container">
-			<div class="row justify-content-center pt-5">
-				<div class="col-lg-4">
-					<img src="https://fakeimg.pl/500x600" />
+			<div class="row justify-content-center align-items-end pt-5">
+				<div class="col-12 col-lg-6 col-xl-4 order-last order-lg-first">
+					<img src="https://fakeimg.pl/500x600" class="m-auto m-lg-0" />
 				</div>
-				<div class="col-lg-4 pb-5">
+				<div class="col-12 col-lg-6 col-xl-4 pb-5 order-first order-lg-last">
 					<h3>What is Lorem Ipsum</h3>
 					<h4 class="mb-4">Lorem Ipsum is simply dummy</h4>
 					<h5>Lorem Ipsum passages</h5>
@@ -201,7 +193,7 @@
 	<section class="download py-5 text-center">
 		<div class="container">
 			<div class="row justify-content-center">
-				<div class="col-6">
+				<div class="col col-xl-7">
 					<p>Contrary to popular belief, Lorem Ipsum is not simply random text.<br />
 						It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
 					</p>
@@ -222,11 +214,12 @@
 	<section class="awards">
 		<div class="container">
 			<div class="row py-4">
-				<div class="col-6 d-flex align-items-center">
+				<div
+					class="col-12 col-md-6 d-flex align-items-center mb-3 mb-md-0 justify-content-center justify-content-md-start">
 					<i class="fa-solid fa-trophy"></i>
 					<span class="fw-bold d-inline-block ms-3 text-white">Winner of 19 Industry Awards</span>
 				</div>
-				<div class="col-6 social-icons d-flex justify-content-end">
+				<div class="col-12 col-md-6 social-icons d-flex justify-content-center justify-content-md-end">
 					<i class="fab fa-facebook-f me-4 text-white"></i>
 					<i class="fab fa-twitter me-4 text-white"></i>
 					<i class="fab fa-google-plus-g me-4 text-white"></i>
@@ -242,7 +235,7 @@
 	<footer class="text-center pt-5 pb-4">
 		<div class="container">
 			<div class="row">
-				<div class="col-3">
+				<div class="col-6 col-lg-3 mb-3 mb-xl-0">
 					<h4 class="text-start mb-2 fw-bold text-uppercase">Contact Us</h4>
 					<ul class="text-start contact">
 						<li class="mb-2 d-flex align-items-center"><i class="fa-regular fa-envelope me-2"></i> <a
@@ -253,7 +246,7 @@
 								target="_blank">Live Chat</a></li>
 					</ul>
 				</div>
-				<div class="col">
+				<div class="col-6 col-lg-3 col-xl mb-3 mb-xl-0">
 					<h4 class="text-start mb-2 fw-bold text-uppercase">About</h4>
 					<ul class="text-start">
 						<li><a href="#">About HotForex</a></li>
@@ -263,7 +256,7 @@
 						<li><a href="#">Awards</a></li>
 					</ul>
 				</div>
-				<div class="col">
+				<div class="col-6 col-lg-3 col-xl mb-3 mb-lg-0">
 					<h4 class="text-start mb-2 fw-bold text-uppercase">Products</h4>
 					<ul class="text-start">
 						<li><a href="#">Forex</a></li>
@@ -273,7 +266,7 @@
 						<li><a href="#">Commodities CFDs</a></li>
 					</ul>
 				</div>
-				<div class="col">
+				<div class="col-6 col-lg-3 col-xl mb-3 mb-lg-0">
 					<h4 class="text-start mb-2 fw-bold text-uppercase">Trading</h4>
 					<ul class="text-start">
 						<li><a href="#">Trading Tools</a></li>
@@ -283,7 +276,7 @@
 						<li><a href="#">Exclusive Analysis</a></li>
 					</ul>
 				</div>
-				<div class="col">
+				<div class="col-6 col-lg-3 col-xl offset-lg-3 offxet-xl-0">
 					<h4 class="text-start mb-2 fw-bold text-uppercase">Promotions</h4>
 					<ul class="text-start">
 						<li><a href="#">Loyalty Program</a></li>
@@ -293,7 +286,7 @@
 						<li><a href="#">Deposit</a></li>
 					</ul>
 				</div>
-				<div class="col">
+				<div class="col-6 col-lg-3 col-xl">
 					<h4 class="text-start mb-2 fw-bold text-uppercase">Affiliates</h4>
 					<ul class="text-start">
 						<li><a href="#">Affiliates</a></li>

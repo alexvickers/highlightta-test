@@ -14,9 +14,11 @@ body {
       width: auto;
     }
 
-    &.bottom {
-      img {
-        height: 60px;
+    @media (min-width: 768px) {
+      &.bottom {
+        img {
+          height: 60px;
+        }
       }
     }
   }
@@ -66,7 +68,7 @@ body {
 
   .download {
     p {
-      font-size: 1.25rem;;
+      font-size: 1.25rem;
     }
   }
 

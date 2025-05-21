@@ -2,21 +2,22 @@
   input,
   select {
     border: 1px solid #a1a1a1;
-		font-size: 0.9em;
+    font-size: 0.9em;
   }
 
   select {
     border-radius: 0;
-		color: #a1a1a1;
+    color: #a1a1a1;
   }
 
-	button {
-		border-radius: 0;
-		font-weight: bold;
-		text-transform: uppercase;
-	}
+  button {
+    border-radius: 0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
 
-	small {
-		color: #818181;
-	}
+  small {
+    color: #818181;
+		font-size: 0.75rem;
+  }
 }
