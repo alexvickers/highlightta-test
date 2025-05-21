@@ -1,7 +1,81 @@
-@use 'reset';
-@use 'components/header';
+@use "reset";
+@use "components/header";
+@use "components/hero";
+@use "components/form";
+@use "components/footer";
 
 body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
+
+  .app-links {
+    img {
+      height: 40px;
+      width: auto;
+    }
+
+    &.bottom {
+      img {
+        height: 60px;
+      }
+    }
+  }
+
+  .image-block {
+    h3 {
+      font-weight: bold;
+    }
+
+    &.grey {
+      background-color: #e5e6e8;
+    }
+
+    &.blue {
+      background: radial-gradient(
+        circle,
+        rgba(99, 120, 167, 1) 0%,
+        rgba(48, 55, 83, 1) 25%,
+        rgba(24, 27, 42, 1) 100%
+      );
+      color: #ffffff;
+
+      h3,
+      h4 {
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+
+      h5,
+      p {
+        font-size: 1rem;
+      }
+
+      h5 {
+        font-weight: bold;
+        color: #d00a10;
+      }
+    }
+  }
+
+  .social-icons {
+    i {
+      font-size: 1.5em;
+      margin-right: 1rem;
+    }
+  }
+
+  .download {
+    p {
+      font-size: 1.25rem;;
+    }
+  }
+
+  .awards {
+    background-color: #222222;
+    font-size: 1.25rem;
+
+    i {
+      color: #d00c10;
+    }
+  }
 }
